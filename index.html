@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Kasidate.me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Noto+Sans+Thai:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="headerbox"></div>
+    <div class="leftmenu">
+        <img src="/kplusg.png" alt="">
+    </div>
+    <section class="heading">
+        <div class="title">QR Code Generator</div>
+        <div class="sub-title">Generate QRCode for anything!</div>
+    </section>
+    <section class="user-input">
+        <div class="content-container">
+            <div class="content-list">
+                <div class="input-item">
+                    <div class="text-display">Generate now...</div>
+                    <input type="text" class="form__field" placeholder="Type Something.." name="input_text"
+                        id='input_text' autocomplete="off" required />
+                    <label for="input_text" class="form__label"></label>
+                    <button class="button" type="submit">Generate QR Code</button>
+                </div>
+            </div>
+            <div class="content-list showqr">
+                <div class="qr-item">
+                    <div class="qr-text-display">Your QR Code</div>
+                    <div class="qr-code" style="display: none;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="copyright">&copy; Copyright
+        <script>var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)</script> KASIDATE.ME | KASIDATEPLUS
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+
+</html>
