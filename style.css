@@ -134,7 +134,7 @@ body {
 }
 
 .content-list {
-    min-width: 400px;
+    min-width: 350px;
     width: 40%;
     max-width: 500px;
     justify-content: space-around;
