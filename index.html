@@ -26,10 +26,11 @@
     <div class="topnav" id="myTopnav">
         <a href="/" class="active"><img src="/kplusg.png" class="logo" alt=""></a>
         <a href="/doc" class="linkmenu">Document</a>
-       
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-        </a> <p>Version 1.0.1</p>
+        </a>
+        <p>Version 1.0.2</p>
     </div>
 
     <section class="heading">
@@ -41,6 +42,14 @@
             <div class="content-list">
                 <div class="input-item">
                     <div class="text-display">Generate now...</div>
+                    <label>
+                        <div class="program">
+                            <input type="radio" name="selectprogram" id="selectprogram" value="URL" class="radio"
+                                checked / disabled>
+                            <input type="radio" name="selectprogram" id="selectprogram" value="TEXT" class="radio" disabled/>
+                            <input type="radio" name="selectprogram" id="selectprogram" value="TEL" class="radio" disabled/>
+                        </div>
+                    </label>
                     <input type="text" class="form__field" placeholder="Type Something.." name="input_text"
                         id='input_text' autocomplete="off" required />
                     <label for="input_text" class="form__label"></label>
