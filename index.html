@@ -6,20 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator | Kasidate.me</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Noto+Sans+Thai:wght@100;300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Noto+Sans+Thai:wght@100;300;400&display=swap"
         rel="stylesheet">
+
+
 </head>
 
 <body>
     <div class="headerbox"></div>
-    <div class="leftmenu">
-        <img src="/kplusg.png" alt="">
+
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="active"><img src="/kplusg.png" class="logo" alt=""></a>
+        <a href="/doc" class="linkmenu">Document</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> <p>Version 1.0.1</p>
     </div>
+
     <section class="heading">
         <div class="title">QR Code Generator</div>
         <div class="sub-title">Generate QRCode for anything!</div>
@@ -38,13 +50,16 @@
             <div class="content-list showqr">
                 <div class="qr-item">
                     <div class="qr-text-display">Your QR Code</div>
-                    <div class="qr-code" style="display: none;"></div>
+                    <div class="qr-code" style="display: none;"> </div>
                 </div>
             </div>
 
         </div>
     </section>
-    <div class="copyright">&copy; Copyright
+
+
+
+    <div class="copyright">&copy; COPYRIGHT
         <script>var CurrentYear = new Date().getFullYear()
             document.write(CurrentYear)</script> KASIDATE.ME | KASIDATEPLUS
     </div>
