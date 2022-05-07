@@ -436,6 +436,13 @@ input[type="radio"] {
   input[type="radio"]:nth-of-type(3)::before {
     content: "TEL";
   }
+  input[disabled]::before{
+      border-color: #868686;
+      color: #868686;
+  }
+  *[title]{
+      color: #e17713;
+  }
   
   /*Mobile Responsive*/
   @media screen and (max-width: 480px){
@@ -450,3 +457,4 @@ input[type="radio"] {
       padding: 12px auto;
     }
   }
+ 

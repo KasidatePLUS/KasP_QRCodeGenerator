@@ -1,8 +1,9 @@
 let btn = document.querySelector(".button");
 let qr_code_element = document.querySelector(".qr-code");
 let programselected = 0;
+
 var radio = document.querySelectorAll(".radio");
-console.log(radio);
+
 radio[0].onclick = function () {
   programselected = 0;
   document.body.style.backgroundImage = "linear-gradient(to right, #808080, #3fada8)"; radio[1].style.color = "";
@@ -17,12 +18,10 @@ radio[2].onclick = function () {
   document.body.style.backgroundImage = "linear-gradient(to right, #CB3066, #16BFFD)";
 }
 
-
 btn.addEventListener("click", () => {
   let user_input = document.querySelector("#input_text");
   let program = document.querySelector("#selectprogram");
-  console.log(program.value);
-  console.log(programselected);
+  
   if (user_input.value != "") {
     if (qr_code_element.childElementCount == 0) {
       generate(user_input);
@@ -37,7 +36,7 @@ btn.addEventListener("click", () => {
 
 });
 
-function generate(user_input) {
+ generate(user_input) {
   qr_code_element.style = "";
     var qrcode = new QRCode(qr_code_element, {
       text: `${user_input.value}`,
