@@ -36,7 +36,7 @@ btn.addEventListener("click", () => {
 
 });
 
- generate(user_input) {
+function generate(user_input) {
   qr_code_element.style = "";
     var qrcode = new QRCode(qr_code_element, {
       text: `${user_input.value}`,
